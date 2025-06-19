@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CozyNest Furniture</title>
+  <style>
+    /* Reset */
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background: #4a6fa5;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      border-bottom: 3px solid #4a6fa5;
+      padding-bottom: 5px;
+      margin-bottom: 20px;
+      font-weight: 700;
+    }
+
+    /* About */
+    #about p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    /* Products Grid */
+    #products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .product-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin: 0 0 8px 0;
+    }
+
+    .product-description {
+      font-size: 0.9rem;
+      color: #666;
+      flex-grow: 1;
+      margin-bottom: 12px;
+    }
+
+    .product-price {
+      font-weight: 700;
+      color: #4a6fa5;
+      font-size: 1rem;
+    }
+
+    /* Contact */
+    #contact p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 18px 10px;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 600px) {
+      header, main {
+        padding: 0 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>CozyNest Furniture</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <section id="about">
+    <h2>Welcome to CozyNest Furniture</h2>
+    <p>At CozyNest, we believe your home deserves the best comfort and style. Our curated collection of furniture combines quality craftsmanship with modern designs to transform your space into a cozy haven.</p>
+  </section>
+
+  <section id="products">
+    <h2>Featured Products</h2>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=60" alt="Wooden Dining Table" />
+      <div class="product-details">
+        <h3 class="product-title">Wooden Dining Table</h3>
+        <p class="product-description">A handcrafted solid oak dining table, perfect for family meals and gatherings.</p>
+        <div class="product-price">$499</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1505692794403-02e3ca687a43?auto=format&fit=crop&w=800&q=60" alt="Modern Sofa" />
+      <div class="product-details">
+        <h3 class="product-title">Modern Sofa</h3>
+        <p class="product-description">Comfort meets style with this sleek three-seater sofa upholstered in soft fabric.</p>
+        <div class="product-price">$899</div>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1493666438817-866a91353ca9?auto=format&fit=crop&w=800&q=60" alt="Cozy Armchair" />
+      <div class="product-details">
+        <h3 class="product-title">Cozy Armchair</h3>
+        <p class="product-description">Relax in style with this plush armchair featuring a durable wooden frame.</p>
+        <div class="product-price">$299</div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: info@cozynestfurniture.com</p>
+    <p>Phone: +1 234 567 8900</p>
+    <p>Address: 1234 Furniture Lane, Home City, USA</p>
+  </section>
+</main>
+
+<footer>
+  &copy; 2025 CozyNest Furniture. All rights reserved.
+</footer>
+
+</body>
+</html>
